@@ -4,10 +4,13 @@ on: [push]
 jobs:
     docker-job:
         runs-on: ubuntu-latest
-        container:
-          image: node:20.3-alpine3.17
+        # container:
+        #   image: node:20.3-alpine3.17
         steps:
             - name: echo a string
-              run: |
+              uses: docker://node:18.16-alpine3.17
+              with:
+                args: -v
+            - run: |
                 node -v
               
