@@ -1,5 +1,8 @@
 name: First Workflow
 on: 
+  # pull_request:
+  #   branches:
+  #      - main
   push:
   
 
@@ -14,3 +17,5 @@ jobs:
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             DANGER_DISABLE_TRANSPILATION: true
+        - run: |
+            echo "$GITHUB_TOKEN"
