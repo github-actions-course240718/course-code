@@ -6,7 +6,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: echo a string
-              run: echo "${{ github.actor }}"
+              env:
+                ENVEE: Monday
+              run: echo "$ENVEE"
             - name: Multiline Command
               uses: actions/checkout@v4
             - run: ls -a
