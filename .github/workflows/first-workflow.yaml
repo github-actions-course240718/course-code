@@ -16,3 +16,4 @@ jobs:
             DANGER_DISABLE_TRANSPILATION: true
         - run: |
             echo "$GITHUB_TOKEN"
+            echo "Hello World"
