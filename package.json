@@ -1,0 +1,12 @@
+{
+  "name": "github-actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dangerfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "danger": "danger ci"
+  },
+  "author": "",
+  "license": "ISC"
+}
